@@ -245,6 +245,7 @@ for sound in "${additional_sounds[@]}"; do
         chmod 0755 -R "${temp_dir}"
         rsync -a "${temp_dir}/" "${sound_dir}/"
         rm -rf "${temp_dir}"
+        echo "${sound}" > "${lang_file}"
     fi
     rm -rf "${asterisk_sound_dir}"
     ln -svf "${sound_dir}" "${asterisk_sound_dir}"
