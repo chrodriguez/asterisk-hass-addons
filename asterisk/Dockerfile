@@ -293,6 +293,8 @@ ENV S6_CMD_WAIT_FOR_SERVICES=0
 ENTRYPOINT [ "/entrypoint.sh" ]
 CMD [ "/stdin.sh" ]
 
+HEALTHCHECK --interval=10s --timeout=10s --retries=3 CMD /usr/sbin/asterisk -rx "core show sysinfo"
+
 LABEL \
     org.opencontainers.image.title="Home Assistant Add-on: Asterisk" \
     org.opencontainers.image.description="PBX server for SIP devices like doorbells and phones." \
