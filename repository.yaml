@@ -1,4 +1,4 @@
 # https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
-name: Asterisk Add-on
-url: "https://github.com/TECH7Fox/asterisk-hass-addons"
-maintainer: Jordy Kuhne <jordy.kuhne@gmail.com>
+name: Car Asterisk Add-on
+url: "https://github.com/chrodriguez/asterisk-hass-addons"
+maintainer: Christian Rodriguez <chrodriguez@gmail.com>
